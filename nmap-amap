@@ -1,2 +1,2 @@
 #!/bin/bash
-nmap $@ -oX ${@}.nmap 2>&1 2>&1 |grep -o "^[0-9]*"| while read i;do amap $@ $i;done
+nmap $@ -oX ${@}.nmap 2>&1 |grep -o "^[0-9]*"| while read i;do amap $@ $i;done
